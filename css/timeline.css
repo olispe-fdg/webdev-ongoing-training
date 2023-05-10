@@ -24,6 +24,7 @@
 
 .timeline > figure > figcaption {
 	margin: 0.3rem;
+	font-style: italic;
 }
 
 .timeline > figure > img {
