@@ -22,6 +22,10 @@
 	flex-direction: column;
 }
 
+.timeline > figure > figcaption {
+	margin: 0.3rem;
+}
+
 .timeline > figure > img {
 	border-radius: var(--border-radius);
 }
