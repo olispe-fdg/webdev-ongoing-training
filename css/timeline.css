@@ -1,0 +1,32 @@
+.timeline {
+	display: grid;
+	grid-template-columns: 1fr min-content 1fr;
+	grid-template-rows: repeat(auto-fill, 1fr);
+	align-items: center;
+	width: 100%;
+
+	--bar-width: 0.2rem;
+}
+
+.timeline-bar {
+	background-color: var(--accent);
+	height: 100%;
+	width: var(--bar-width);
+	margin: 0 calc(0.5rem - var(--bar-width) / 2);
+}
+
+.timeline-bar::after {
+	content: '';
+	border: var(--bar-width) solid var(--accent);
+	background-color: var(--background);
+
+	width: 1rem;
+	aspect-ratio: 1 / 1;
+	border-radius: 100%;
+
+	display: block;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
