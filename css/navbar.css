@@ -1,0 +1,25 @@
+.navbar {
+	display: flex;
+	flex-direction: row;
+	background-color: var(--midground);
+	width: 100%;
+	justify-content: center;
+	padding: 0.2rem;
+}
+
+.navbar > .container {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	gap: 1rem;
+
+	width: 100%;
+	max-width: var(--max-content-width);
+}
+
+.navbar > .container > ul {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	gap: 0.5rem;
+}
