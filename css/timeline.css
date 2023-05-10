@@ -16,19 +16,17 @@
 	background-color: var(--midground);
 	border-radius: var(--border-radius);
 
-	padding: 0.3rem;
-
 	display: flex;
 	flex-direction: column;
 }
 
 .timeline > figure > figcaption {
-	margin: 0.3rem;
+	margin: 0.5rem;
 	font-style: italic;
 }
 
 .timeline > figure > img {
-	border-radius: var(--border-radius);
+	border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
 
 .timeline-bar {
@@ -52,4 +50,8 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+.timeline-date {
+	font-size: var(--font-size-heading-small);
 }
