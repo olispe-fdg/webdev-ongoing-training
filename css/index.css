@@ -3,6 +3,8 @@
 	--accent: #e77620;
 	--background: #262426;
 	--midground: #383638;
+
+	--border-radius: 12px;
 }
 
 body {

@@ -1,11 +1,29 @@
 .timeline {
 	display: grid;
 	grid-template-columns: 1fr min-content 1fr;
-	grid-template-rows: repeat(auto-fill, 1fr);
 	align-items: center;
 	width: 100%;
+	column-gap: 0.5rem;
 
 	--bar-width: 0.2rem;
+}
+
+.timeline :nth-child(3n+1) {
+	justify-self: right;
+}
+
+.timeline > figure {
+	background-color: var(--midground);
+	border-radius: var(--border-radius);
+
+	padding: 0.3rem;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.timeline > figure > img {
+	border-radius: var(--border-radius);
 }
 
 .timeline-bar {
