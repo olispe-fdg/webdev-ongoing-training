@@ -1,0 +1,25 @@
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+label {
+	display: flex;
+	flex-direction: column;
+}
+
+input {
+	background-color: var(--midground);
+}
+
+input[type=submit] {
+	background-color: var(--accent);
+	width: fit-content;
+	padding: 0.2rem;
+	border-radius: var(--border-radius);
+}
+
+textarea {
+	background-color: var(--midground);
+}
