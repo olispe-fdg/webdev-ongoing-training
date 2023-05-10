@@ -28,6 +28,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	max-width: var(--max-content-width);
+	padding: 0 0.5rem;
 }
 
 h1 {
