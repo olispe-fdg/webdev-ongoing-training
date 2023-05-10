@@ -10,4 +10,14 @@
 body {
 	background-color: var(--background);
 	color: var(--primary);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	max-width: 1280px;
 }

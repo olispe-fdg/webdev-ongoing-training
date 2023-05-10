@@ -1,6 +1,6 @@
 .timeline {
 	display: grid;
-	grid-template-columns: 1fr min-content 1fr;
+	grid-template-columns: minmax(0, 1fr) min-content minmax(0, 1fr);
 	align-items: center;
 	width: 100%;
 	column-gap: 0.5rem;
@@ -30,7 +30,7 @@
 	background-color: var(--accent);
 	height: 100%;
 	width: var(--bar-width);
-	margin: 0 calc(0.5rem - var(--bar-width) / 2);
+	margin: 0 calc(0.5rem + var(--bar-width) / 2);
 }
 
 .timeline-bar::after {
