@@ -1,6 +1,16 @@
 const path = require("path");
+const { globSync } = require("glob");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
+const allHtmlFiles = globSync("src/**/*.html");
+const htmlPluginInstances = allHtmlFiles.map(
+	(htmlFile) =>
+		new HtmlWebpackPlugin({
+			template: htmlFile,
+			filename: path.basename(htmlFile),
+		})
+);
 
 module.exports = {
 	entry: "./src/index.js",
@@ -24,9 +34,7 @@ module.exports = {
 		],
 	},
 	plugins: [
-		new HtmlWebpackPlugin({
-			template: "src/index.html",
-		}),
+		...htmlPluginInstances,
 		new MiniCssExtractPlugin({
 			filename: "main.css",
 		}),

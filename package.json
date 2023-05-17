@@ -21,6 +21,7 @@
 	"devDependencies": {
 		"css-loader": "^6.7.3",
 		"dart-sass": "^1.25.0",
+		"glob": "^10.2.4",
 		"html-loader": "^4.2.0",
 		"html-webpack-plugin": "^5.5.1",
 		"mini-css-extract-plugin": "^2.7.5",
