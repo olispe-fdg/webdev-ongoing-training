@@ -4,16 +4,12 @@
 
 .timeline {
 	display: grid;
-	grid-template-columns: minmax(0, 1fr) min-content minmax(0, 1fr);
+	grid-template-columns: min-content min-content 1fr;
 	align-items: center;
 	width: 100%;
 	column-gap: 0.5rem;
 
 	--bar-width: 0.2rem;
-}
-
-.timeline :nth-child(3n+1) {
-	justify-self: right;
 }
 
 .timeline > figure {
