@@ -1,4 +1,4 @@
-@import "./css/form";
-@import "./css/index";
-@import "./css/navbar";
-@import "./css/timeline";
+@use "css/core";
+@use "css/form";
+@use "css/navbar";
+@use "css/timeline";

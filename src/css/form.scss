@@ -1,3 +1,5 @@
+@use "theme";
+
 form {
 	display: flex;
 	flex-direction: column;
@@ -10,16 +12,16 @@ label {
 }
 
 input {
-	background-color: var(--midground);
+	background-color: theme.$midground;
 }
 
 input[type=submit] {
-	background-color: var(--accent);
+	background-color: theme.$accent;
 	width: fit-content;
 	padding: 0.2rem;
-	border-radius: var(--border-radius);
+	border-radius: theme.$border-radius;
 }
 
 textarea {
-	background-color: var(--midground);
+	background-color: theme.$midground;
 }

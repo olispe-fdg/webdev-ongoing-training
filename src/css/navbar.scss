@@ -1,3 +1,5 @@
+@use "theme";
+
 .navbar {
 	position: sticky;
 	top: 0;
@@ -10,22 +12,22 @@
 	width: 100%;
 	padding: 0.2rem;
 
-	background-color: var(--midground);
-}
+	background-color: theme.$midground;
 
-.navbar > .container {
-	display: flex;
-	flex-direction: row;
-	align-items: baseline;
-	gap: 1rem;
+	.container {
+		display: flex;
+		flex-direction: row;
+		align-items: baseline;
+		gap: 1rem;
 
-	width: 100%;
-	max-width: var(--max-content-width);
-}
+		width: 100%;
+		max-width: theme.$max-content-width;
+	}
 
-.navbar > .container > ul {
-	display: flex;
-	flex-direction: row;
-	align-items: baseline;
-	gap: 0.5rem;
+	ul {
+		display: flex;
+		flex-direction: row;
+		align-items: baseline;
+		gap: 0.5rem;
+	}
 }
