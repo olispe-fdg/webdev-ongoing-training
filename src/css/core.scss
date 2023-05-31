@@ -1,6 +1,7 @@
 @use "theme";
 
 body {
+	overflow: hidden;
 	background-color: theme.$background;
 	color: theme.$primary;
 
