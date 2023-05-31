@@ -13,21 +13,33 @@ $bar-width: 0.2rem;
 	width: 100%;
 	column-gap: 0.5rem;
 
-	figure {
+	section {
 		background-color: theme.$midground;
 		border-radius: theme.$border-radius;
 
 		display: flex;
-		flex-direction: column;
-	}
+		flex-direction: row;
+		justify-content: space-between;
+		gap: 1rem;
 
-	figcaption {
-		margin: 0.5rem;
-		font-style: italic;
+		margin: 0.5rem 0;
+
+		div {
+			padding: 0.5rem;
+		}
 	}
 
 	img {
-		border-radius: 0 0 theme.$border-radius theme.$border-radius;
+		$width: 30%;
+
+		border-radius: 0 theme.$border-radius theme.$border-radius 0;
+		max-width: $width;
+	}
+
+	h2 {
+		font-size: theme.$font-size-heading-small;
+		letter-spacing: 0.05rem;
+		padding-bottom: 0.25rem;
 	}
 }
 
