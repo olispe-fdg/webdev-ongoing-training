@@ -26,11 +26,24 @@ h1 {
 }
 
 .visually-hidden {
-	clip: rect(0 0 0 0);
-	clip-path: inset(50%);
-	height: 1px;
-	overflow: hidden;
-	position: absolute;
-	white-space: nowrap;
-	width: 1px;
+	&:not(:focus) {
+		clip: rect(0 0 0 0);
+		clip-path: inset(50%);
+		height: 1px;
+		overflow: hidden;
+		position: absolute;
+		white-space: nowrap;
+		width: 1px;
+	}
+
+	position: relative;
+	top: 0;
+	left: 0;
+
+	border: solid 1px black;
+	background-color: white;
+	color: black;
+	padding: 0.5rem;
+
+	@include theme.fontScaleHeadingSmall;
 }
