@@ -27,13 +27,15 @@
 	}
 
 	.content {
-		max-width: theme.$max-content-width;
-
 		display: flex;
 		flex-direction: row;
 		gap: 1rem;
 
 		margin: 3rem;
+	}
+
+	.text {
+		max-width: 30rem;
 	}
 
 	img {
@@ -44,6 +46,6 @@
 	}
 
 	p {
-		margin: 0.2rem 0;
+		margin: 1rem 0;
 	}
 }
