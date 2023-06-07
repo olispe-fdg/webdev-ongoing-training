@@ -22,6 +22,8 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
+		background: linear-gradient(130deg, var(--colour-start) 0%, var(--colour-end) 100%);
 	}
 
 	.content {
