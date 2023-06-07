@@ -63,7 +63,7 @@
 	a {
 		color: theme.$accent;
 
-		&:hover, &:active, &:visited {
+		&:hover, &:active, &:focus {
 			text-decoration: underline;
 		}
 	}

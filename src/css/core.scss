@@ -25,6 +25,10 @@ h1 {
 	letter-spacing: 0.1rem;
 }
 
+:focus {
+	border: solid 1px black;
+}
+
 .visually-hidden {
 	&:not(:focus) {
 		clip: rect(0 0 0 0);
