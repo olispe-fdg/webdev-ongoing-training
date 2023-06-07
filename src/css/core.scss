@@ -10,7 +10,8 @@ body {
 	align-items: center;
 
 	font-family: Poppins, sans-serif;
-	font-size: theme.$font-size-body;
+
+	@include theme.fontScaleBody;
 }
 
 main {
@@ -20,7 +21,7 @@ main {
 }
 
 h1 {
-	font-size: theme.$font-size-heading;
+	@include theme.fontScaleHeading;
 	letter-spacing: 0.1rem;
 }
 

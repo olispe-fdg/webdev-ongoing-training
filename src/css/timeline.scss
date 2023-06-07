@@ -34,7 +34,7 @@
 
 		margin: 1rem;
 
-		@media (min-width: breakpoints.$tabletLarge) {
+		@media (min-width: breakpoints.$tablet) {
 			margin: 3rem;
 			flex-direction: row;
 		}
