@@ -1,23 +1,95 @@
 @use "theme";
+@use "breakpoints";
 
-.navbar {
+.mobile-nav-button {
 	position: absolute;
-	top: 0;
+	left: 0.2rem;
+	top: 50%;
+	transform: translateY(-50%);
+
+	background-color: theme.$midground;
+	color: theme.$onMidground;
+	border-radius: 100%;
+
+	width: 2rem;
+	height: 2rem;
 
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: baseline;
+	justify-content: center;
+	align-items: center;
 
-	width: 100%;
-	padding: 0.2rem 2rem;
+	font-size: 1.5rem;
 
-	background: transparent;
+	box-shadow: -4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+
+	@media (min-width: breakpoints.$smallTablet) {
+		display: none;
+	}
+}
+
+.navbar {
+	display: none;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: calc(100% - 5rem);
+	height: 100%;
+
+	flex-direction: column;
+
+	color: theme.$onMidground;
+	background: theme.$midground;
+
+	padding: 1rem;
+
+	@media (min-width: breakpoints.$smallTablet) {
+		display: flex;
+
+		width: 100%;
+		height: auto;
+
+		color: theme.$primary;
+
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: baseline;
+
+		padding: 0.2rem 2rem;
+
+		background: transparent;
+	}
 
 	ul {
 		display: flex;
-		flex-direction: row;
-		align-items: baseline;
+		flex-direction: column;
 		gap: 0.5rem;
+
+		@media (min-width: breakpoints.$smallTablet) {
+			flex-direction: row;
+			align-items: baseline;
+		}
+	}
+
+	.visually-hidden {
+		display: none;
+
+		@media (min-width: breakpoints.$smallTablet) {
+			display: inline;
+		}
+	}
+
+	button {
+		position: absolute;
+		right: 1.5rem;
+		top: 0.5rem;
+
+		font-size: 32px;
+		line-height: 32px;
+
+		@media (min-width: breakpoints.$smallTablet) {
+			display: none;
+		}
 	}
 }
