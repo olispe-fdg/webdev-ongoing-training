@@ -70,6 +70,12 @@
 		navbar.style.setProperty("--mobile-display", "none");
 		openButton.setAttribute("aria-hidden", "false");
 	}
+
+	document.addEventListener("click", (e) => {
+		if (!navbar.contains(e.target) && e.target !== openButton) {
+			closeMobileNavbar();
+		}
+	});
 </script>
 </body>
 </html>
