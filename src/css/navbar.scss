@@ -2,7 +2,7 @@
 @use "breakpoints";
 
 #mobile-nav-button {
-	position: absolute;
+	position: fixed;
 	left: 0.2rem;
 	top: 50%;
 	transform: translateY(-50%);
@@ -31,7 +31,7 @@
 	--mobile-display: none;
 	display: var(--mobile-display);
 
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 
@@ -47,6 +47,7 @@
 
 	@media (min-width: breakpoints.$smallTablet) {
 		display: flex;
+		position: absolute;
 
 		width: 100%;
 		height: auto;
