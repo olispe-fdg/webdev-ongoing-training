@@ -11,16 +11,38 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
-<nav class="navbar">
-	<div class="container">
-		<h1>Ray Tracing</h1>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="#">Useful resources</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
-	</div>
+<button type="button" id="mobile-nav-button" aria-label="Open navigation menu." onclick="openMobileNavbar()">>
+</button>
+<nav id="navbar">
+	<button type="button" aria-label="Close navigation menu." onclick="closeMobileNavbar()">x</button>
+	<h1>Ray Tracing</h1>
+	<a class="visually-hidden skip-to-content" href="#content-start">Skip to content.</a>
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="useful-resources.html">Useful resources</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	</ul>
 </nav>
 
+<script>
+	const navbar = document.getElementById("navbar");
+	const openButton = document.getElementById("mobile-nav-button");
+
+	function openMobileNavbar() {
+		navbar.style.setProperty("--mobile-display", "flex");
+		openButton.setAttribute("aria-hidden", "true");
+	}
+
+	function closeMobileNavbar() {
+		navbar.style.setProperty("--mobile-display", "none");
+		openButton.setAttribute("aria-hidden", "false");
+	}
+
+	document.addEventListener("click", (e) => {
+		if (!navbar.contains(e.target) && e.target !== openButton) {
+			closeMobileNavbar();
+		}
+	});
+</script>
 </body>
 </html>
