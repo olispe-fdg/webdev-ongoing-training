@@ -1,5 +1,9 @@
 @use "theme";
 
+:root {
+	--accent: #{theme.$accent};
+}
+
 body {
 	overflow: hidden;
 	background-color: theme.$background;

@@ -16,7 +16,7 @@ input {
 }
 
 input[type=submit] {
-	background-color: theme.$accent;
+	background-color: var(--accent);
 	width: fit-content;
 	padding: 0.2rem;
 	border-radius: theme.$border-radius;
