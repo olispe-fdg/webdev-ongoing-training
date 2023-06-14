@@ -1,5 +1,11 @@
 @use "theme";
 
+.form-wrapper {
+	max-width: 20rem;
+	align-self: center;
+	margin-top: 3rem;
+}
+
 form {
 	display: flex;
 	flex-direction: column;
