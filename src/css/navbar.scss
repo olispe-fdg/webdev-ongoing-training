@@ -96,6 +96,8 @@
 	}
 
 	.current-page {
-		border-bottom: solid 0.08rem theme.$primary;
+		@media (min-width: breakpoints.$smallTablet) {
+			border-bottom: solid 0.08rem theme.$primary;
+		}
 	}
 }
