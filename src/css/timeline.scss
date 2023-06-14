@@ -67,12 +67,4 @@
 			text-decoration: underline;
 		}
 	}
-
-	.skip-to-content {
-		display: none;
-
-		@media (min-width: breakpoints.$smallTablet) {
-			display: block;
-		}
-	}
 }
