@@ -1,5 +1,7 @@
 @use "theme";
 
+$shadow: -0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+
 .form-wrapper {
 	max-width: 20rem;
 	align-self: center;
@@ -17,17 +19,20 @@ label {
 	flex-direction: column;
 }
 
-input {
+input, textarea {
 	background-color: theme.$midground;
+	color: theme.$onMidground;
+	box-shadow: $shadow;
+	text-shadow: none;
+
+	padding: 0.2rem;
+	border-radius: theme.$border-radius;
+	border: solid 1px transparent;
 }
 
 input[type=submit] {
 	background-color: var(--accent);
+	color: theme.$primary;
 	width: fit-content;
-	padding: 0.2rem;
-	border-radius: theme.$border-radius;
-}
-
-textarea {
-	background-color: theme.$midground;
+	padding: 0.4rem;
 }
